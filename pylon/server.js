@@ -10,5 +10,5 @@ wsServer.on('request', function (request) {
     var connection = request.accept(null, request.origin);
     setInterval(() => {
         connection.sendUTF(new Date().getTime())
-    }, 100);
+    }, 5000);
 });
